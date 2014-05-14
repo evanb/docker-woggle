@@ -1,14 +1,18 @@
-# woggle
+# docker-woggle
 
-A Clojure library designed to ... well, that part is up to you.
+Fiddling with docker-based clojure dev environment
 
-## Usage
+## Steps
 
-FIXME
+1 Start the vagrant CoreOS VM and open a shell
 
-## License
+    $ vagrant up
+    $ vagrant ssh
+    $ cd share
+    
+1 Create an image using the Dockerfile
 
-Copyright © 2014 FIXME
+    $ cd share
+    $ docker build -t evanb/clojure .
+    
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
